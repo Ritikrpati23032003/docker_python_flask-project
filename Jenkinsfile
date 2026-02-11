@@ -1,9 +1,8 @@
 pipeline {
     agent { label 'dev' }
 
-    // 🔹 Add this triggers block
     triggers {
-        githubPush()
+        githubPush()  // ← Add this
     }
 
     stages {
